@@ -64,57 +64,68 @@ color: var(--text-primary);
 .nav-links a.active { color: var(--accent-soft); }
 
 .nav-toggle {
-background: none; border: none; cursor: pointer;
-display: flex; flex-direction: column; gap: 5px;
-padding: 4px;
+  background: none; border: none; cursor: pointer;
+  display: flex; flex-direction: column; gap: 5px;
+  padding: 4px;
 }
 
 .nav-toggle span {
-display: block; width: 22px; height: 2px;
-background: var(--text-muted); border-radius: 2px;
-transition: background 0.2s;
+  display: block; width: 22px; height: 2px;
+  background: var(--text-muted); border-radius: 2px;
+  transition: background 0.2s;
 }
 
 .nav-toggle:hover span { background: var(--text-primary); }
 
 /* ── HERO ── */
 #home {
-min-height: 100vh;
-display: flex;
-align-items: center;
-padding: 0 3rem;
-position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 3rem;
+  position: relative;
 }
 
 .hero-grid {
-max-width: 1100px;
-margin: 0 auto;
-width: 100%;
-display: grid;
-grid-template-columns: 1fr auto;
-align-items: center;
-gap: 4rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 4rem;
 }
 
-.hero-left { display: flex; flex-direction: column; gap: 1.4rem; }
+.hero-left { 
+  margin-left: 50px;
+  display: flex; 
+  flex-direction: column; 
+  gap: 1.4rem; 
+}
 
 .hero-social-col {
-display: flex;
-flex-direction: column;
-gap: 1.1rem;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  align-items: center;
 }
 
 .hero-social-col a {
-color: var(--text-muted);
-text-decoration: none;
-transition: color 0.2s, transform 0.2s;
-display: flex;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.2s, transform 0.2s;
+  display: flex;
 }
 
-.hero-social-col a:hover { color: var(--accent-soft); transform: translateX(2px); }
+.hero-social-col a:hover { 
+  color: var(--accent-soft); 
+  transform: translateX(2px); 
+}
 
-.hero-social-col svg { width: 20px; height: 20px; }
+.hero-social-col svg { 
+  width: 20px; 
+  height: 20px; 
+}
 
 .hero-eyebrow {
   font-family: 'Syne', sans-serif;
@@ -127,43 +138,43 @@ display: flex;
 }
 
 h1 {
-font-family: 'Bebas Neue', sans-serif;
-font-size: clamp(3.6rem, 6vw, 5.8rem);
-font-weight: 800;
-line-height: 1.08;
-letter-spacing: -0.0.1em;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(3.6rem, 6vw, 5.8rem);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.0.1em;
 }
 
 .hero-role {
-font-size: 1rem;
-font-weight: 400;
-color: var(--text-muted);
-letter-spacing: 0.01em;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-muted);
+  letter-spacing: 0.01em;
 }
 
 .hero-desc {
-font-size: 0.97rem;
-font-weight: 300;
-color: #999;
-line-height: 1.75;
-max-width: 36ch;
+  font-size: 0.97rem;
+  font-weight: 300;
+  color: #999;
+  line-height: 1.75;
+  max-width: 36ch;
 }
 
 .btn-primary {
-display: inline-flex;
-align-items: center;
-gap: 0.55rem;
-background: var(--accent);
-color: #fff;
-font-family: 'DM Sans', sans-serif;
-font-size: 0.875rem;
-font-weight: 500;
-padding: 0.72rem 1.5rem;
-border-radius: 6px;
-text-decoration: none;
-border: none; cursor: pointer;
-width: fit-content;
-transition: background 0.2s, transform 0.15s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  background: var(--accent);
+  color: #fff;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.72rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  border: none; cursor: pointer;
+  width: fit-content;
+  transition: background 0.2s, transform 0.15s;
 }
 
 .btn-primary:hover { background: var(--accent-soft); transform: translateY(-1px); }
