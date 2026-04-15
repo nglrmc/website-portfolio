@@ -117,6 +117,7 @@ display: flex;
 .hero-social-col svg { width: 20px; height: 20px; }
 
 .hero-eyebrow {
+  font-family: 'Syne', sans-serif;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 3px;
@@ -257,8 +258,8 @@ margin-bottom: 0.8rem;
 }
 
 .section-title {
-font-family: 'Syne', sans-serif;
-font-size: clamp(1.6rem, 3vw, 2.2rem);
+font-family: 'Bebas Neue', sans-serif;
+font-size: clamp(2.6rem, 4vw, 3.2rem);
 font-weight: 800;
 margin-bottom: 2.5rem;
 letter-spacing: -0.01em;
@@ -288,55 +289,51 @@ border-bottom: 1px solid var(--border);
 font-size: 0.875rem;
 }
 
-.info-row:last-child { border-bottom: none; }
-.info-row .label { color: var(--text-muted); }
-.info-row .val { color: var(--text-primary); font-weight: 400; }
-
-/* ── SKILLS ── */
-.skills-wrap {
-display: grid;
-grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-gap: 1rem;
+.info-row:last-child { 
+  border-bottom: none; 
 }
 
-.skill-card {
-background: var(--bg-card);
-border: 1px solid var(--border);
-border-radius: 10px;
-padding: 1.4rem 1.2rem;
-display: flex;
-align-items: center;
-gap: 1rem;
-transition: border-color 0.2s, transform 0.2s;
+.info-row .label { 
+  color: var(--text-muted); 
 }
 
-.skill-card:hover {
-border-color: rgba(124,108,252,0.35);
-transform: translateY(-2px);
+.info-row .val { 
+    color: var(--text-primary); 
+    font-weight: 400; 
 }
 
 .skill-icon {
-width: 40px; height: 40px;
-border-radius: 8px;
-background: rgba(124,108,252,0.12);
-display: flex;
-align-items: center;
-justify-content: center;
-flex-shrink: 0;
-font-size: 1.2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
 }
 
-.skill-info { display: flex; flex-direction: column; gap: 0.15rem; }
+.HTML, .CSS, .JavaScript, .MySQL {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  text-align: center;
+}
+
+.HTML img, .CSS img, .JavaScript img, .MySQL img {
+  width: 60px;
+  height: 50px;
+  object-fit: contain;
+}
 
 .skill-name {
-font-family: 'Syne', sans-serif;
-font-size: 0.88rem;
-font-weight: 700;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
 }
 
 .skill-level {
-font-size: 0.75rem;
-color: var(--text-muted);
+  font-size: 0.85rem;
+  color: var(--text-muted);
 }
 
 /* ── PORTFOLIO ── */
