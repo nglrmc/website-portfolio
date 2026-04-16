@@ -328,10 +328,11 @@ section {
 }
 
 .slide img {
-  width: 33.333%;
+  width: 60%;
   height: auto;
   flex-shrink: 0;
   object-fit: contain;
+  overflow: auto;
 }
 
 .prev, .next {
@@ -358,6 +359,46 @@ section {
 
 .next {
   right: 10px;
+}
+
+
+.mouse-btn {
+  background: none;
+  border: none;
+  width: 33.333%;
+  margin-left: 1em;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;          /* was: z-index: 1px — invalid, fixed here */
+  inset: 0;              /* shorthand for top/right/bottom/left: 0 */
+  background-color: rgba(0, 0, 0, 0.85);
+  overflow-y: auto;
+}
+
+.modalContent {
+  background: #1e1e1e;
+  margin: 10% auto;
+  padding: 40px;
+  max-width: 500px;
+  border: 1px solid #333;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  font-size: 18px;
+  cursor: pointer;
+  color: #888;
+  transition: color 0.2s;
+}
+
+.close:hover {
+  color: #e5ff00;
 }
 
 footer {
@@ -491,8 +532,6 @@ footer {
 
   .mobile-nav.open {
     display: flex;
-    position: sticky;
-    z-index: 100;
   }
 
   nav {
